@@ -1,0 +1,296 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+\documentclass[12pt]{scrartcl} % use larger type; default would be 10pt
+
+\usepackage{fontspec} % Font selection for XeLaTeX; see fontspec.pdf for documentation
+\defaultfontfeatures{Mapping=tex-text} % to support TeX conventions like ``---''
+\usepackage{xunicode} % Unicode support for LaTeX character names (accents, European chars, etc)
+\usepackage{xltxtra} % Extra customizations for XeLaTeX
+
+% other LaTeX packages.....
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+%\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{mathptmx}
+\usepackage{helvet}
+\usepackage{courier}
+%
+\usepackage{type1cm}         
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+\usepackage{xcolor,listings}
+\usepackage[lined, boxed, linesnumbered, commentsnumbered]{algorithm2e}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+% settings for links
+\hypersetup{
+colorlinks=true,
+linkcolor=black,
+citecolor=black
+}
+%settings for section headings
+\titleformat*{\section}{\Large\bfseries\sffamily}
+\titleformat*{\subsection}{\large\bfseries\sffamily}
+
+% settings for listings
+\lstset{
+    basicstyle=\scriptsize,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=5pt,
+    showspaces=false, % don't show spaces by adding underscores
+    showstringspaces=false, % don't underline spaces in strings
+    showtabs=false, % don't show tabs with underscores
+    frame=shadowbox,
+    tabsize=4,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    keywordstyle=\color{blue!70},
+    commentstyle=\color{red!50!green!50!blue!50},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    numberbychapter=false,
+    stringstyle=\ttfamily %typewriter type for strings
+}
+
+
+
+\begin{document}
+\begin{center}
+\title{\Huge \textsc Assignment 3}
+\subtitle{\large \textsc Introduction to Web Science\\Dr. Michael Nelson\\Fall 2014}
+\author{Sybil Melton}
+\date{\small \textsc October 3, 2014}
+\maketitle
+\end{center}
+\pagenumbering{gooble}
+\newpage
+\tableofcontents
+\listoftables
+\lstlistoflistings
+
+\newpage
+\pagenumbering{arabic}
+\section{Question}
+
+Download the 1000 URIs from assignment \#2.
+Use a tool to remove (most) of the HTML markup.
+
+\subsection{Answer}
+I decided to use boilerpipe to download the URIs and extract the content.
+The built-in function ArticleExtractor yielded the best results when I tested it with www.cnn.com.
+Since it is a Java program, I continued to use Java for the entire program.\cite{bib-bpdemo}
+I took the suggestion of hashing the URI for output file names, to prevent any problems with characters in the URI.
+Each mapping was written to ``mapping.txt" to keep track of the hash to URI translations.
+Listing \ref{code:hash} is the function used.\\
+\lstset{
+    language=java,
+    caption={Hash Function},
+     label=code:hash
+}
+
+\lstinputlisting{getHash.java}
+
+Using the URI list file name as an argument, the main function opened each URL and sent it to the boilerpipe function, BoilerpipeSAXInput. 
+The extracted text was written to an output file with the hashed URI file name.\cite{bib-io}
+Listing \ref{code:main} is the main function.\\
+\lstset{
+    language=java,
+    caption={Main Function},
+     label=code:main
+}
+
+\lstinputlisting{getDownload.java}
+\newpage
+\section{Question}
+
+Choose a query term (e.g., ``shadow") that is not a stop word
+(see week 5 slides) and not HTML markup from step 1 (e.g., ``http")
+that matches at least 10 documents (hint: use ``grep" on the processed
+files).  If the term is present in more than 10 documents, choose
+any 10 from your list.  (If you do not end up with a list of 10
+URIs, you've done something wrong).
+
+As per the example in the week 5 slides, compute TFIDF values for
+the term in each of the 10 documents and create a table with the
+TF, IDF, and TFIDF values, as well as the corresponding URIs.  The
+URIs will be ranked in decreasing order by TFIDF values.
+
+\subsection{Answer}
+I used Perl as my chosen scripting language to search each file for a query term.
+The script was run with the search word as an argument.
+If the term was found, it increased a counter for each occurrence to keep track of the Term Frequency.
+Additionally, each word was counted in the file, so the TF was calculated in the script to be apart of the result set.
+The hashed file name was looked up in ``mapping.txt" to get the URI it belonged to.
+The results were printed to the console.\cite{bib-ptext},\cite{bib-psearch}
+Listing \ref{code:search} is the script used. \\
+\lstset{
+    language=perl,
+    caption={Search Script},
+     label=code:search
+}
+
+\lstinputlisting{search.pl}
+
+I was able to find many files using the search term ``music".  
+I used Google for the DF estimation, which has approximately 42 billion webpages indexed.\cite{bib-size}
+My search on Google for ``music" yielded an estimate of 67.7 million webpages.
+
+The IDF(music) was calculated as:
+\[
+IDF = log_2(42B/67.7M) = 9.277
+\]
+
+Table \ref{table:tfidf} lists the URI in decreasing order by TFIDF value.
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{TFIDF} & \textbf{TF} & \textbf{IDF} & \textbf{URI} \\
+\hline
+0.158 & 0.017 & 9.277 & www.turlockjournal.com  \\
+\hline
+0.130 & 0.014 & 9.277 & royradio.net  \\
+\hline
+0.111 & 0.012 & 9.277 & somafm.com/digitalis/played  \\
+\hline
+0.074 & 0.008 & 9.277 & gashouseradio.com  \\
+\hline
+0.074 & 0.008 & 9.277  & www.wfmz.com  \\
+\hline
+0.056 & 0.006 & 9.277 & www.comicbookmovie.com/fansites/nailbiter111/news \\
+\hline
+0.027 & 0.003 & 9.277 & www.lonelyplanet.com/usa/new-york-city/travel-tips-and-articles/76899  \\
+\hline
+0.009 & 0.001 & 9.277 & thelionwords.wordpress.com  \\
+\hline
+0.009 & 0.001 & 9.277 & www.cypheredwolf.com  \\
+\hline
+0.009 & 0.001 & 9.277 & tropicomx.com  \\
+
+\hline
+\end{tabular}
+\caption{10 Hits for the term ``music", ranked by TFIDF.}
+\label{table:tfidf}
+\end{table}
+
+
+\section{Question}
+Now rank the same 10 URIs from question \#2, but this time 
+by their PageRank.  Use any of the free PR estimaters on the web,
+such as:
+
+http://www.prchecker.info/check\_page\_rank.php
+
+http://www.seocentro.com/tools/search-engines/pagerank.html
+
+http://www.checkpagerank.net/
+
+
+Briefly compare and contrast the rankings produced in questions 2
+and 3.
+\subsection{Answer}
+I used www.prchecker.info to retrieve the PageRanks.
+Seven of the original ten I chose came back with a rank of zero or NA, so I went through the list of URIs and I ended up with eight with a page rank over zero.
+Table \ref{table:prank} lists the URI in decreasing order by PageRank value.
+The table order loosely follows the order in Table \ref{table:tfidf}.  
+For example, the URI with the top TFIDF score is number two in PageRank and
+the two URIs with a PageRank of zero are in the bottom three in TFIDF values.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{PageRank} & \textbf{URI} \\
+\hline
+0.6 & www.wfmz.com  \\
+\hline
+0.5 & www.turlockjournal.com  \\
+\hline
+0.4 & somafm.com/digitalis/played  \\
+\hline
+0.4 & www.comicbookmovie.com/fansites/nailbiter111/news  \\
+\hline
+0.3 & gashouseradio.com  \\
+\hline
+0.2 & www.cypheredwolf.com  \\
+\hline
+0.2 & royradio.net  \\
+\hline
+0.1 & www.lonelyplanet.com/usa/new-york-city/travel-tips-and-articles/76899  \\
+\hline
+0.0 & thelionwords.wordpress.com  \\
+\hline
+0.0 & tropicomx.com  \\
+\hline
+\end{tabular}
+\caption{10 hits for the term ``music", ranked by PageRank.}
+\label{table:prank}
+\end{table}
+
+\section{Question}
+Compute the Kendall Tau\_b score for both lists (use ``b" because
+there will likely be tie values in the rankings).  Report both the
+Tau value and the ``p" value.
+
+\subsection{Answer}
+Using R, I input the values of TFIDF and Page rank into two separate vectors.
+Using the package Kendall, it calculated a tau of 0.94 and p of 0.00045812.
+With a tau number so close to +1, there is a high association between the two measured quantities.\cite{bib-ken}
+In the case of ties, both packages ``Kendall and cor produce the same result but cor.test produces a p-value which is not as accurate."\cite{bib-tau}
+
+\newpage
+\begin{thebibliography}{}
+
+\bibitem{bib-bpdemo}
+  \emph{Boilerpipe demo classes},
+ Retrieved September 27, 2014 from
+https://code.google.com/p/boilerpipe/source/browse/\#svn/tags/BOILERPIPE\_1\_0\_0/boilerpipe-core/src/demo/de/l3s/boilerpipe/demo
+
+\bibitem{bib-io}
+  \emph{Java Console and File Input/Output Cheat Sheet},
+ Retrieved September 27, 2014 from
+http://www.cs.carleton.edu/faculty/dmusican/cs117s03/iocheat.html
+
+\bibitem{bib-ptext}
+  \emph{Parsing Text Files},
+Kirk Brown,
+ Retrieved September 28, 2014 from
+http://perl.about.com/od/filesystem/a/per\_parse\_tabs.htm
+
+\bibitem{bib-psearch}
+  \emph{How can I search multiple files for a string in Perl?},
+Sinan Ünür,
+ Retrieved September 28, 2014 from
+http://stackoverflow.com/questions/1512729/how-can-i-search-multiple-files-for-a-string-in-perl  
+
+\bibitem{bib-size}
+  \emph{The size of the World Wide Web (The Internet)},
+ Retrieved September 28, 2014 from
+http://www.worldwidewebsize.com/
+
+\bibitem{bib-tau}
+A.I. McLeod,
+  \emph{Package `Kendall’}.
+2011,
+ Retrieved September 28, 2014 from
+http://cran.r-project.org/web/packages/Kendall/Kendall.pdf
+
+\bibitem{bib-ken}
+  \emph{The size of the World Wide Web (The Internet)},
+ Retrieved September 28, 2014 from
+http://en.wikipedia.org/wiki/Kendal\_tau\_rank\_correlation\_coefficient\#Tau-b
+\end{thebibliography}
+
+\end{document}

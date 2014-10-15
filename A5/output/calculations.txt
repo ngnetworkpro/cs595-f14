@@ -1,0 +1,12 @@
+Twitter
+Mean: 1989.93150685
+Median: 499
+Standard Deviation: 4088.53652127
+Linkedin
+Mean: 211.558823529
+Median: 175
+Standard Deviation: 157.640542556
+Facebook
+Mean: 484.416666667
+Median: 290
+Standard Deviation: 697.541690311

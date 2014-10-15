@@ -1,0 +1,97 @@
+No.	Name	Count
+1	Robert McKenzie	4
+2	Michael Davis	21
+3	Andrew Garverick	28
+4	Kelsie Thomas	35
+5	Sue Babcock	39
+6	Lola Setzer	41
+7	Jack Fardink	59
+8	Wendy Babcock	67
+9	me	95
+10	Ann De	97
+11	Karen Garrison Osborne	107
+12	Kimberly Setzer Couch	116
+13	Gracie White	118
+14	Joshua Roberto	126
+15	Kathy Melton Schuler	144
+16	Sharon Setzer Davis	147
+17	Rick Cale	157
+18	Janet Thomas	162
+19	Jed E Diah	170
+20	Josh Becker	172
+21	Elizabeth Fredette	172
+22	Audra Claffey	181
+23	Kim Furlow Thomas	182
+24	Chris Wood	186
+25	Kris Hoke	195
+26	Chuck Becker	199
+27	Josh Garverick	200
+28	Shannon Stewart	202
+29	James Woge	207
+30	Melissa Sue Page	212
+31	Sean Thomas	219
+32	Tori Thurnher	225
+33	Jason Hutcheson	233
+34	Tracy Roberto	236
+35	Julie Ann Rowland	240
+36	Mike Talevich	247
+37	Pauly Mahoney	259
+38	Jeffrey Gray	260
+39	Shawn Setzer	262
+40	Jamie Thomas Jr	264
+41	Stan Sylvia	265
+42	Cory Hobson	268
+43	Chrissy Mineck Newcomb	270
+44	Darrell Caudill	271
+45	Wendy Samples	273
+46	Rich Kugelman	278
+47	David Smith	282
+48	Vidette Fort Nelson	282
+49	Sean Sutherland	284
+50	John E Duck	296
+51	Justin Hamin	296
+52	Constance Hammer	314
+53	Joey De	316
+54	Robert McKenzie	324
+55	Dwayne Foster	330
+56	Laura J. Hobson	330
+57	Jesse Colin	345
+58	Amy Thomas	363
+59	Frank Cage	369
+60	Becky LoPresti Becker	371
+61	David Falls	389
+62	Sarah Marie Carey	402
+63	Bethany Touhey Finley	423
+64	Garnet Moses-Melton	426
+65	Tony De	466
+66	Odu Martial Arts	467
+67	Rachel Netti	481
+68	Wise Non-Profit	502
+69	Chris Coykendall	509
+70	Melanie Hidalgo Bell	541
+71	Mark J Helzer	545
+72	Jessica Meli	546
+73	Ken Melton	549
+74	Adam Nankervis	562
+75	Rubi Kugelman	592
+76	Paul Marcelle	603
+77	Anne Zdrojewski	609
+78	Shelly Cinnamon LoPresti	610
+79	Scott Frank	614
+80	Ashley Wynegar-Bell	619
+81	Alexandra Fardink	628
+82	David Lassiter	681
+83	Thomas W. Wolfrey	685
+84	Umar Ibrahim Alfa	703
+85	Clyde Barrow	732
+86	Allien Deon Brewley	742
+87	Amanda Hoke	744
+88	Paco Rodriguez	751
+89	Rosie DeBarberie	950
+90	Elizabeth Wendt Gruber	954
+91	Andrew Moses	1034
+92	Lindsay Setzer	1182
+93	John Bolack	1925
+94	Chris Featherston	3424
+95	Jason Erfle	3667
+96	Efc Fights	4834

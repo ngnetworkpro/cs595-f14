@@ -1,0 +1,5 @@
+strict graph G {
+27;
+30;
+27 -- 30  [weight=4];
+}

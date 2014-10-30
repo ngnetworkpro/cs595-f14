@@ -1,0 +1,10 @@
+strict graph G {
+24;
+25;
+26;
+28;
+24 -- 26  [weight=5];
+24 -- 28  [weight=4];
+25 -- 26  [weight=2];
+25 -- 28  [weight=3];
+}

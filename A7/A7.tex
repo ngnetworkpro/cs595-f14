@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{ \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{cite}
+\usepackage{listings}
+
+%%%%%---------------------------%%%%%%%%%%%
+\usepackage{fancybox}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage[margin=1in, vmargin=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{movie15}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{bashful}
+
+\usepackage{multicol}
+%%%%%%%%%%%%%%---------------%%%%%%%%
+
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%%%%%%%%CODE INPUT STYLES%%%%%%%%%%%%%
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  firstline=2,% Supress the first line that begins with `%`
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!20},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+\lstdefinestyle{BashOutputStyle}{
+  basicstyle=\small\ttfamily,
+  numbers=none,
+  frame=tblr,
+  columns=fullflexible,
+  backgroundcolor=\color{blue!10},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+
+% settings for listings
+\lstset{
+    basicstyle=\scriptsize,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=5pt,
+    showspaces=false, % don't show spaces by adding underscores
+    showstringspaces=false, % don't underline spaces in strings
+    showtabs=false, % don't show tabs with underscores
+    frame=shadowbox,
+    tabsize=4,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    keywordstyle=\color{blue!70},
+    commentstyle=\color{red!50!green!50!blue!50},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    numberbychapter=false,
+    stringstyle=\ttfamily %typewriter type for strings
+}
+\hypersetup{
+colorlinks=true,
+linkcolor=black,
+citecolor=black,
+urlcolor=black
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Introduction to Web Science- Fall 2014} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Assignment Seven \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Sybil Melton} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+\newpage
+\tableofcontents
+%\listoffigures
+%\listoftables
+\lstlistoflistings
+\newpage
+%----------------------------------------------------------------------------------------
+%	TASK 1
+%----------------------------------------------------------------------------------------
+
+\section{Karate Club D3 Graph}
+Using D3, create a graph of the Karate club before and after the split.
+\begin{itemize}
+\item Weight the edges with the data from: 
+http://vlado.fmf.uni-lj.si/pub/networks/data/ucinet/zachary.dat
+\item Have the transition from before/after the split occur on a mouse click.
+\end{itemize}
+
+\subsection{Solution}
+I started the solution by chosing the force directed graph, because it shows the``bond strength'' by the distance between the nodes .\cite{bib:d3-force}
+Using the example, I learned the json format required to create the graph from the karate club data.
+Then I modified my code from the previous assignment, so the node sizes were computed from the node centrality betweenness.
+The square root of the centrality was taken, but if it was less than five, then five was used for the size so every node could be seen on the graph.
+The link weights were taken from the edge weights in the data.\cite{bib:zach-data}
+The resulting diction was written into json files, one for the entire club and one for the split.\cite{bib:py-dict}
+Listing \ref{code:graphs}, in section \ref{sec:graph-code} is the python code used calculate the betweenness and write the json files for the graphs.
+
+\subsection{Result}
+When the page is opened, the entire karate club graph is created from the kc.json data.
+There are two buttons.  When Split-2 is clicked, the club graph splits in two, in according to the data in split.json.
+All data files used are included in this report.
+If the ``Karate Club'' button is pressed, the graph goes back to one.
+The original script created multiple instances of the graphs, so the remove() method was used to prevent that behavior.\cite{bib:svg-remove}
+Hovering over a node highlights it in red and shows the node id.
+The resulting page has also been placed at http://www.cs.odu.edu/~smelton/webscience/karateclub.html.
+
+\newpage
+\subsection{Python Code}
+\label{sec:graph-code}
+%%% Code Listing%%%%%
+
+\lstset{
+    language=python,
+    caption={Python graph code},
+     label=code:graphs
+}
+
+\lstinputlisting{graphs.py}
+\newpage 
+%----------------------------------------------------------------------------------------
+%           TASK 2
+%----------------------------------------------------------------------------------------
+
+\section{Twitter}
+
+\subsection{Result}
+
+
+\newpage
+
+\bibliography{references}{}
+\bibliographystyle{plain}
+\end{document}

@@ -1,0 +1,29 @@
+body {
+    background-color: #E6E6E6;
+}
+
+.node {
+  stroke: #ccc;
+  stroke-width: 1.5px;
+  color: #ccc;
+}
+
+.node:not(:hover)
+ 
+.nodetext {
+  display: none;
+}
+.node:hover{
+  stroke: red;
+  fill: red;
+}
+
+.link {
+  stroke: #999;
+}
+
+.link:not(:hover)
+
+.link :hover{
+  stroke: red;
+}

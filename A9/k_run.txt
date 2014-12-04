@@ -1,0 +1,22 @@
+>>> kclust=clusters.kcluster(data,k=5)
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+>>> printClusters(kclust, k)
+>>> k.write('K = 10\n')
+>>> kclust=clusters.kcluster(data,k=10)
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+>>> printClusters(kclust, k)
+>>> k.write('K = 20\n')
+>>> kclust=clusters.kcluster(data,k=20)
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+>>> printClusters(kclust, k)

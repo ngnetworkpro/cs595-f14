@@ -1,0 +1,199 @@
+-
+  -
+    -
+      Crop 4 kids
+      -
+        -
+          -
+            The Ultimate Sales Executive Resource - For B2B sales leaders wanting to measurably  improve the pr
+            -
+              Gustavo J. A. M. Carneiro
+              Tips for software engineer - Tips that make life of a software engineer easier.   Well, not exactly
+          -
+            Randy Rice's Software Testing & Quality Blog - Dedicated to thoughts about software testing, QA, an
+            -
+              Andrew Eckford: The Blog - Not a real doctor since 2004.
+              -
+                Ninja Software Development - Developing software in the Real World is different from all the theory
+                (YABAOAE) Yet Another Blog About Oracle Application Express
+        -
+          ERDAS TITAN - Accessing geospatial data and content from unlimited public and private sources, into
+          -
+            User Driven Modelling - This blog is about my PhD research (now finished) at University of the West
+            -
+              Penguin Parens
+              Composing the Semantic Web - A tool developer's blog on ontology development for the Semantic Web a
+    -
+      Really Simple Sidi (RSS)
+      -
+        All Work No Play - My tech Blog.  Symbian Foundation. Mobile phones. Technology. Programming. Trend
+        -
+          Information Security Thoughts - Allen Baranov - A blog dedicated to thoughts about Information Secu
+          Shep Hyken - Customer Service Speaker
+  -
+    -
+      -
+        -
+          Life Revisited - This is the place where you will find chronicles of my college days in brief or el
+          Coffee, bits and bikes - My projects in the world of electronics, computers, bicycles and coffee dr
+        -
+          Web Science and Digital Libraries Research Group - Research and Teaching Updates from the Web Scien
+          ClevelandDotNet - The ClevelandDotNet Blog is created to serve all .Net developers, both in Clevela
+      -
+        -
+          Holden's Blog - A Canadian developer in America.
+          all mine! - Personal thoughts on Linux desktops and distro's, community and marketing, open source 
+        -
+          -
+            All In A Day's Work - Software Development, Running A Business
+            -
+              Headius - Helping the JVM Into the 21st Century
+              Emilian Bold's blog - Broadcasting from the Romanian trenches
+          -
+            Antipasto Hardware Blog - Hacking, Engineering, and Tech at Liquidware
+            -
+              Ethan's Software Blog - #{catchy_title.generate!}
+              Ugliest Fountain in the World - This blog will chronicle my many adventures. For instance, I like t
+    -
+      -
+        -
+          -
+            Dylan Beattie's Blog - Specs 'n' Bugs 'n' Rock 'n' Roll
+            -
+              We Like Games - Here we follow up with all types of game reviews, game systems, ect.
+              DevScape - Tips, Tricks, and Lessons Learned from the world of Application Development
+          -
+            -
+              -
+                Zero-Sum
+                learning communications blog - eLearning is a misunderstood domain.  Basically there are two types 
+              -
+                -
+                  GAMES AND GADGETS - Tech news, gadget reviews and how-tos on just about anything and everything.
+                  -
+                    Myryama
+                    -
+                      the kengell chronicles - a collection of thoughts culled from nearly thirty years studying physics,
+                      -
+                        Apple iPhone and iPod Blog - Welcome to the Apple iPhone and iPod personal review blog! Get news, r
+                        -
+                          Computer Applications - A place to discuss computer and tech questions.
+                          Brief Thoughts, Briefly Written - When you barely have five minutes to yourself, you tend to start 
+                -
+                  The Pragmatic Geographer - Politics, Geography, Conservation.  Whatever I feel like talking about, 
+                  -
+                    Early Indications - Early Indications is the weblog version of a newsletter I've been publishing si
+                    mrc's Cup of Joe Blog - Save money, time, and increase business productivity
+            -
+              -
+                clog - computer lab objectionable  generalisations
+                Diary of a Mild man - Ramblings on a theme of Exchange, Parenting, Computers, Cookery and other par
+              -
+                -
+                  anti-virus rants - devising a framework for thinking about malware and related issues such as virus
+                  -
+                    Mr.HinkyDink's UT Blog - UT99, IT Security, Miscellaneous Crap
+                    Wolf's Lair - "A lair is also referred to as a hideout for a superhero or supervillain"
+                -
+                  BDPA Detroit TAC - Tech news,events,social comments, BDPA local and National information.
+                  -
+                    -
+                      CompDocs - Computer Documents,Scripts, Tips for System Administrators and Engineers.Microsoft,Linux
+                      -
+                        Trying to become an Expert - My Ongoing CCDE Journey - An Engineer by Heart !!!  A Dreamer, A Pione
+                        Dy-Verse - The technical blog of  Parashuram
+                    -
+                      iTiNFO4U - Scroll Down
+                      -
+                        an enthusiastic austrian *nix/Linux user - Informations about the experience I made with Sun-Solari
+                        -
+                          Techno Files - A Technophile's technobabble, including: computer software and hardware, cellphones,
+                          Electronic Error - Innovation is not the product of  logical thought ,even though the final product
+        -
+          -
+            Resetter Printer - Printer software for reset blink error codes canon epson hp
+            -
+              Eastman's
+              Podunk's Valet - An eccentric exploration into the world of a gen-x underachiever.
+          -
+            -
+              Photoshopper27 - Hundreds of Photoshop Tutorials for CS 6, 5, 4, 3, 2 and Photoshop7. Yours to use.
+              Tour Source - Presale passwords and promo codes to your favorite concerts and shows.
+            -
+              CADDHELP - My personal blog where I try to keep friends and associates informed as to what is going
+              -
+                schav - you know...for kids! (tech startup stuff, life in NYC, half-mad thoughts and musings)
+                -
+                  -
+                    Free iTunes Store Downloads - Every week, Free iTunes Downloads delivers the free TV, video, music,
+                    Virgin Media HD, TiVo & Netflix - Nialli's unofficial blog on Virgin Media's high definition, TiVo 
+                  -
+                    neglected stairways - SO FAR, PINK FLOYD MONO, SOME SOFT MACHINE RARITIES AND THE ODD CAPTAIN BEEFH
+                    F-Measure - Less Than Timely Music Reviews and Commentary.
+      -
+        -
+          -
+            Five One - The blog of one Jeremy Quinn esq. of Brixton.
+            -
+              Shindo Hikaru's Imagination
+              -
+                Nikon CLS Practical Guide - Practical use of the Nikon SB800 Speedlight with the D200 Camera
+                -
+                  No Cropping Zone - Macro photography tips and tricks.
+                  NIKON GLASS
+          -
+            Daily Websites - Daily websites, tips and tricks and more ...
+            -
+              CafeNinja - All Things Geek and Caffeine
+              -
+                Maruti
+                (void *)
+        -
+          Wake Up And Dream!
+          -
+            -
+              -
+                ORA-00001: Unique constraint violated - Random ramblings and raves of relational relevance!
+                SetCronJob Blog - Latest news from SetCronJob - Reliable Online Cronjobs Service
+              -
+                -
+                  -
+                    Andrejus Baranovskis Blog - Blog about Oracle technology
+                    Steve's Rant - Welcome to Steve's Rant Blog.  This is a place where I will talk about cool "geek" t
+                  -
+                    eclipser-blog - This is a blog of Eclipse enthusiasts from Poznan (Poland) who would like to share 
+                    Misc - On Software and Science
+                -
+                  -
+                    My life with Android :-)
+                    3D Application Development - using OpenCascade and .Net
+                  -
+                    -
+                      MLA Wire
+                      -
+                        GNUmed for the masses - This blog deals with the Free and Open Source Software GNUmed. It is essent
+                        -
+                          Shige's Research Blog
+                          -
+                            David Alison's Blog - I blog because everyone is entitled to my opinion
+                            freegnu - and other stuff too
+                    -
+                      -
+                        -
+                          SharePoint Development - "It takes a month to learn, but a lifetime to master"
+                          Dr. MonkeyIQ - C++, Linux, libferris and embedded development. Yet another blog from yet another NA
+                        -
+                          Agile Musings
+                          -
+                            evoluzination - Thoughts in the collective mind ... since 2006.
+                            Scott Spendolini's Blog - Mostly Oracle APEX.  Mostly.
+                      -
+                        Luciano Resende - Open source, Apache, SOA, SCA and other good technical tips &amp; tricks on gener
+                        -
+                          Ruslan's blog
+                          MY NODE - SHARING MY KNOWLEDGE
+            -
+              smuglispweeny - Grossly unfair, unreliable, biased, and pretty much delusional rants and ravings on
+              -
+                Ruminations
+                Analysis leads to Paralysis - A frustrated computer programmer's quest to observe things around him
